@@ -1,0 +1,35 @@
+.container_externo {
+   display: flex;
+   flex-direction: column;
+}
+
+.container_interno {
+   display: flex;
+   height: 50px;
+   flex-direction: row;
+}
+
+.item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex: 1;
+   border: dashed 1px black;
+}
+
+.first {
+   background-color: #FF66C4;
+}
+
+.second {
+   background-color: #FF5757;
+}
+
+.third {
+   background-color: #8C52FF;
+}
+
+.four {
+   background-color: #00ff66;
+}

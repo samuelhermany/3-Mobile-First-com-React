@@ -1,0 +1,36 @@
+.container {
+   display: flex;
+   justify-content: space-between;
+   height: 100px;
+}
+
+.item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100px;
+}
+
+.first {
+   background-color: #FF66C4;
+}
+
+.second {
+   background-color: #FF5757;
+}
+
+.third {
+   background-color: #8C52FF;
+}
+
+.four {
+   background-color: #00ff66;
+}
+
+.five {
+   background-color: #00e5ff;
+}
+
+.six {
+   background-color: #ffee00;
+}

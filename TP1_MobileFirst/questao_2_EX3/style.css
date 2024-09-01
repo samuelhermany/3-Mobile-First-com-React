@@ -1,0 +1,25 @@
+.container {
+   display: flex;
+   justify-content: flex-end;
+   height: 100px;
+   width: 200px;
+}
+
+.item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.first {
+   background-color: #FF66C4;
+   flex-grow: 1;
+}
+
+.second {
+   background-color: #FF5757;
+}
+
+.third {
+   background-color: #8C52FF;
+}

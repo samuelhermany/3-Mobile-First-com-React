@@ -1,0 +1,25 @@
+.grid_container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 100px);
+}
+
+.grid{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: dashed 1px black;
+}
+
+.item1 {background-color: rgb(255, 255, 0);}
+.item2 {background-color: rgb(255, 255, 100);}
+.item3 {background-color: rgb(255, 255, 200);}
+.item4 {background-color: rgb(255, 255, 255);}
+.item5 {background-color: rgb(0, 82, 255);}
+.item6 {background-color: rgb(100, 82, 255);}
+.item7 {background-color:  rgb(200, 82, 255);}
+.item8 {background-color:  rgb(255, 82, 255);}
+.item9 {background-color: rgb(0, 255, 102);}
+.item10 {background-color: rgb(3, 163, 67);}
+.item11 {background-color:rgb(148, 213, 174);}
+.item12 {background-color: rgb(0, 62, 25);}

@@ -1,0 +1,13 @@
+.grid_container {
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: repeat(3, 100px);
+}
+
+.grid{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: dashed 1px black;
+   background-color:  rgb(0, 255, 102);
+}
