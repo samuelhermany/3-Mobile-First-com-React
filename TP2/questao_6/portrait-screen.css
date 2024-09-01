@@ -1,0 +1,6 @@
+@media (orientation: portrait) {
+   .dimension{
+      height: auto;
+      width: 100vw;
+   }
+}

@@ -1,0 +1,155 @@
+/* #region GERAL */
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+   margin: 10px;
+}
+
+main{
+   width: 100%;
+}
+/* #endregion GERAL */
+
+/* #region PERFIL */
+#perfil{
+   display: flex;
+   margin-bottom: 10px;
+}
+
+#perfil img{
+   width: 30vw;
+   height: auto;
+   border-radius: 10px;
+   margin-right: 10px;
+   max-width: 300px;
+}
+
+#perfil h1{
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+
+#perfil h2{
+   font-size: 15px;
+   word-wrap: break-word; /* Quebra o texto longo */
+   word-break: break-word; /* Quebra as palavras longas */
+   overflow-wrap: break-word; /* Suporte adicional para quebra de palavras */
+}
+/* #endregion PERFIL */
+
+/* #region TEXTCONTENT*/
+#text-content h2, .inline {
+   display: inline; /* Faz com que o <h2> se comporte como um elemento inline */
+}
+/* #endregion TEXTCONTENT*/
+
+/* #region GRADE-IMAGENS */
+#grade-imagens{
+   display: flex;
+   width: 100%;
+   height: auto;
+   gap: 10px;
+   margin-top: 10px;
+   flex-wrap: wrap;
+}
+
+#grade-imagens img{
+   /* width: 50vw; */
+   max-width: calc(50% - 5px); /* Considera a largura da borda e a margem */
+   border-radius: 10px;
+   
+   height: auto;
+   object-fit: cover;
+}
+/* #endregion GRADE-IMAGENS */
+
+/* #region AMIGOS/SUGESTÕES*/
+#grupo{
+   margin: 10px;
+   max-width: 100%;
+}
+
+#grade{
+   display: flex;
+   justify-content: space-between;
+}
+
+#grade img{
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: 2px solid rgba(128, 128, 128, 0.616);
+}
+
+#grupo H2{
+   margin-bottom: 10px;
+}
+/* #endregion AMIGOS/SUGESTÕES*/
+
+@media (min-width: 768px) {
+   body{
+      background-color: green;
+   }
+
+   main {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Ocupa a altura total da viewport */
+      padding: 10px;
+      box-sizing: border-box;
+   }
+
+   /* Contêiner para os itens lado a lado */
+   .container {
+      display: flex;
+      flex: 1; /* Faz com que o contêiner ocupe o espaço disponível no main */
+   }
+
+   #perfil{
+      display: block;
+   }
+
+   /* Estilos para os itens do contêiner */
+   #perfil, #text-content, #grade-imagens {
+      flex: 1; /* Faz com que os itens ocupem o mesmo espaço disponível */
+   }
+
+   #text-content{
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      width: 100%;
+   }
+
+   /* Contêiner para os itens na linha de baixo */
+   .container-inferior {
+      /* display: flex;
+      flex-direction: column; */
+      position: fixed;
+      gap: 10px; /* Espaçamento entre os itens */
+      width: calc(100%/3);
+      margin-top: 360px;
+   }
+
+   /* Estilos para os itens do contêiner inferior */
+   #grade {
+      padding-right: 10px;
+   }
+
+   #grade-imagens{
+      width: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+
+   #grade-imagens img{
+      max-width: calc(((100vw/3)/2)- 10px);
+      height: auto;
+      object-fit: cover;
+   }
+}

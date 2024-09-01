@@ -1,0 +1,12 @@
+.dimension{
+   width: 1920px;
+   height: auto;
+}
+
+
+@media (orientation: landscape) {
+   .dimension{
+      width: auto;
+      height: 80vw;
+   }
+}
