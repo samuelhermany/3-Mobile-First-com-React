@@ -7,3 +7,6 @@ Aqui estão todos os TPs e o AT da matéria
 ## [TP2] (https://github.com/samuelhermany/3-Mobile-First-com-React/tree/main/TP2)
 
 ## [TP3] (https://github.com/samuelhermany/3-Mobile-First-com-React/tree/main/TP3)
+
+<a href="https://github.com/samuelhermany/3-Mobile-First-com-React/tree/main/TP2" target="_blank">Visite meu perfil no GitHub</a>
+
