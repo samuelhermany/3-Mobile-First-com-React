@@ -3,15 +3,13 @@ instrucoes_TP3.pdf
 
 TP1/samuel_hermany_DR1_TP1.docx
 TP1/samuel_hermany_DR1_TP1.pdf
+TP1/_intrucoes.png
 
 TP2/samuel_hermany_DR1_TP2.docx
 TP2/samuel_hermany_DR1_TP2.pdf
 
 TP3/samuel_hermany_DR1_TP3.docx
 TP3/samuel_hermany_DR1_TP3.pdf
-
-git rm --cached "TP3/samuel_hermany_DR1_TP3.docx"
-git rm --cached "TP3/samuel_hermany_DR1_TP3.pdf"
 # Logs
 logs
 *.log
