@@ -12,7 +12,7 @@
 body{
   width: 100%;
   height: 100%;
-  padding: 10px 16px 0 calc(10% + 25px);
+  padding: 10px calc(10% + 25px) 0 16px;
 }
 /* #endregion GERAL */
 
@@ -59,11 +59,11 @@ body{
   height: 100%;
   color: var(--white);
   top: 0;
-  left: -0px;
+  right: 0px;
   align-items: flex-start;
   transition: all 0.5s;
   background: var(--brown-500);
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Altura de cada item do menu */
