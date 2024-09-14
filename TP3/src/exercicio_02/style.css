@@ -12,7 +12,7 @@
 body{
   width: 100%;
   height: 100%;
-  padding: 10px 16px;
+  padding: 10px 16px 0 calc(10% + 25px);
 }
 /* #endregion GERAL */
 
@@ -26,40 +26,63 @@ body{
   width: 100%;
 }
 
+.menu-mobile{
+  display: flex;
+  flex-direction: column;
+}
 /* Oculta o check box default */
-.nav > input{
+.menu-mobile > input{
   display: none;
+}
+.menu-mobile > img{
+  width: 56px;
+}
+
+.logo {
+  color: var(--black);
+  cursor: auto;
+  width: 35px;
 }
 
 /* simbolo para abri e fechar o menu */
 .checkbtn i {
-  font-size: 24px;
-  color: var(--gray-100);
-  padding-right: 20px;
+  color: var(--black);
   cursor: pointer;
+  margin-right: 50px;
 }
 
 /* Configuração inicial do menu, escondido */
 .menu{
   position: fixed;
-  width: 100%;
-  height: 100vh;
+  width: 60px;
+  /* width: 210px; */
+  height: 100%;
   color: var(--white);
-  top: 60px;
-  left: -100%;
-  text-align: center;
+  top: 0;
+  left: -0px;
+  align-items: flex-start;
   transition: all 0.5s;
   background: var(--brown-500);
-  opacity: 0.85;
+  margin-right: 10px;
 }
 
 /* Altura de cada item do menu */
 .menu li{
-  line-height: calc((100vh - 60px)/4);
-  font-size: 30px;
+  padding-left: 15px;
+  line-height: calc(100vh / 10);
+  font-size: 25px;
   cursor: pointer;
+  white-space: nowrap; /* Impede quebra de linha */
+  overflow: hidden; /* Oculta o conteúdo excedente */
 }
-
+.menu li i{
+  padding-right: 30px;
+}
+.menu li:not(:first-child):hover {
+  background: var(--brown-900);
+  padding-left: -10px;
+  border-radius: 10px;
+}
 /* posição com o menu visivel */
 #check:checked ~ ul{
   left: 0;
@@ -141,39 +164,8 @@ body{
     max-width: 1512px;
     height: 100%;
     margin: auto;
+    padding-top: 100px;
   }
-
-  /* #region NAVIGATION*/
-  /* Oculta o boão para mobile */
-  .checkbtn{
-    display: none;
-  }
-  .nav{
-    display: flex;
-    padding: 0 30px;
-    justify-content: space-between;
-    height: 120px;
-  }
-  .btn{
-    width: 165px;
-    height: 55px;
-  }
-   .menu{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    height: 100%;
-    background: transparent;
-    color: var(--black);
-  }
-  .menu li{
-    font-size: 15px;
-  }
-  /* #endregion NAVIGATION*/
 
   .conteudo{
     display: flex;
