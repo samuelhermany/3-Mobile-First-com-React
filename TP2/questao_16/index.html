@@ -9,6 +9,24 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+           <input type="checkbox" id="check">
+           <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+              <!-- <i class="fa-solid fa-xmark"></i> -->
+           </label>
+           <label class="logo">Face</label>
+           <ul>
+              <li><a href="#">Perfil</a></li>
+              <li><a href="#">Fotos</a></li>
+              <li><a href="#">Amigos</a></li>
+              <li><a href="#">Sugestões</a></li>
+           </ul>
+
+            <button id="btnMode" onclick="darkMode()">Dark mode</button>
+        </nav>
+    </header>
    <main>
       <div class="video-atual">
          <iframe width="560" height="415" src="https://www.youtube.com/embed/0TnO1GzKWPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -81,5 +99,7 @@
            <!-- Adicione mais comentários conforme necessário -->
        </div>
    </main>
+
+   <script src="script.js"></script>
 </body>
 </html>

@@ -5,6 +5,11 @@
    box-sizing: border-box;
 }
 
+/* styles.css */
+.invert-colors {
+   filter: invert(1);
+}
+
 body {
    font-family: Arial, sans-serif;
    line-height: 1.6;
@@ -16,6 +21,18 @@ main {
    margin: 0 auto;
    padding: 20px;
    background: #fff;
+}
+
+#btnMode{
+   position: absolute;
+   background-color: #333333;
+   color: #ffffff;
+   border-radius: 6px;
+   height: 50px;
+   right: 0;
+   width: 100px;
+   margin-top: calc((80px - 50px)/2);
+   cursor: pointer;
 }
 
 .video-atual{
@@ -106,7 +123,8 @@ main {
 .comentario {
    margin-bottom: 10px;
 }
-.comentarios h2{
+
+h2, strong{
    text-align: center;
    color: #007bff;
 }
@@ -115,10 +133,96 @@ main {
    margin-bottom: 5px;
 }
 
+/* #region MENU */
+header nav{
+   background: #0082e0;
+   height: 80px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+label.logo{
+   color: white;
+   font-size: 35px;
+   line-height: 80px;
+   padding: 0 100px;
+   font-weight: bold;
+}
+
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+}
+
+nav ul li a{
+   color: white;
+   font-size: 17px;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+}
+
+a:hover{
+   background: #1b9bff;
+   transition: 0.5s;
+}
+
+/* Botão pra mobile */
+.checkbtn{
+   font-size: 30px;
+   color: white;
+   float: left;
+   line-height: 80px;
+   margin-left: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+#check{
+   display: none;
+}
+/* #endregion MENU */
+
 /* Responsividade */
 @media (max-width: 768px) {
    .video-item {
        flex: 1 1 calc(50% - 20px);
+   }
+   .checkbtn{
+      display: block;
+   }
+
+   ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+   }
+
+   nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+   }
+
+   nav ul li a{
+      font-size: 20px;
+   }
+
+   a:hover{
+      background: none;
+      color: #0082e6;
+   }
+
+   #check:checked ~ ul{
+      left: 0;
    }
 }
 

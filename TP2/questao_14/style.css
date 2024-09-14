@@ -9,7 +9,7 @@
 }
 
 main{
-   height: calc(100vh - 80px)
+   height: calc(100%);
    padding: 10px;
 }
 /* #endregion GERAL */
@@ -30,12 +30,6 @@ label.logo{
    line-height: 80px;
    padding: 0 100px;
    font-weight: bold;
-}
-
-nav ul{
-   /* float: right; */
-   /* background-color: red; */
-   /* margin-right: 20px; */
 }
 
 nav ul li{
@@ -148,6 +142,18 @@ a:hover{
    margin-bottom: 10px;
 }
 /* #endregion AMIGOS/SUGESTÕES*/
+
+#btnMode{
+   position: absolute;
+   background-color: #333333;
+   color: #ffffff;
+   border-radius: 6px;
+   height: 50px;
+   right: 0;
+   width: 100px;
+   margin-top: calc((80px - 50px)/2);
+   cursor: pointer;
+}
 
 @media (max-width: 720px) {
    main{
