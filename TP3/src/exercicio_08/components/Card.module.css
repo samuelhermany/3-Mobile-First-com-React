@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.img {
+  width: 100%;
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.conteudo {
+  padding: 20px 10px;
+}
+
+.titulo {
+  font-size: 1.5rem;
+}
+
+.descricao {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  padding: 20px 0;
+  text-align: justify;
+}
+
+.rodape {
+  font-size: 1rem;
+}
