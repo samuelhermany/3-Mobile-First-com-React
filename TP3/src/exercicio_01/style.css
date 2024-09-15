@@ -55,7 +55,7 @@ body{
 
 /* Altura de cada item do menu */
 .menu li{
-  line-height: calc((100vh - 60px)/4);
+  line-height: calc((100vh - 60px)/5);
   font-size: 30px;
   cursor: pointer;
 }
@@ -177,8 +177,15 @@ body{
   .menu li{
     font-size: 15px;
   }
+  .menu li:hover {
+    background: var(--brown-500);
+    padding: 0 20px;
+    border-radius: 10px;
+    line-height: 55px;
+  }
   /* #endregion NAVIGATION*/
 
+  /* #region MAIN */
   .conteudo{
     display: flex;
     flex-direction: row-reverse;
@@ -196,4 +203,5 @@ body{
     max-width: 100%;
     object-fit: cover;
   }
+  /* #endregion MAIN */
 }
