@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.postagem {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.imagem {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.titulo {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.texto {
+  margin-top: 10px;
+}
+
+.meta {
+  color: gray;
+  margin-top: 5px;
+}
+
+.interactions {
+  margin-top: 10px;
+}
+
+.comentarios {
+  margin-top: 20px;
+}
