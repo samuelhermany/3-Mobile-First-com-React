@@ -13,7 +13,7 @@ export function Menu() {
   return (
     <div className={styles.card}>
       <nav className={styles.nav}>
-      <img className={styles.logo} src={logo} alt="logo" />
+        <img className={styles.logo} src={logo} alt="logo" />
         <input
           className={styles.checkbox}
           type="checkbox"
