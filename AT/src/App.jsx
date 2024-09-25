@@ -8,8 +8,8 @@ export default function App() {
         <a href="src/exercicio_01/index.html">TP 1</a>
         <a href="src/exercicio_02/index.html">TP 2</a>
         <a href="src/exercicio_03/index.html">TP 3</a>
-        {/* <a href="src/exercicio_04/index.html">TP 4</a>
-        <a href="src/exercicio_05/index.html">TP 5</a>
+        <a href="src/exercicio_04/index.html">TP 4</a>
+        {/*<a href="src/exercicio_05/index.html">TP 5</a>
         <a href="src/exercicio_06/index.html">TP 6</a>
         <a href="src/exercicio_07/index.html">TP 7</a>
         <a href="src/exercicio_08/index.html">TP 8</a>
