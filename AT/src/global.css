@@ -1,0 +1,26 @@
+:root {
+   --white: #ffffff;
+   --black: #000000;
+
+   --gray-100: #747474;
+   --gray-700: #2B3139;
+   --gray-800: #181A20;
+   --gray-900: #1C1C1C;
+
+   --green-300: #00A699;
+
+   --red-100: #FF4646;
+
+   --brown-400: #8C7D5D;
+   --brown-500: #7C6A46;
+   --brown-900: #4d432b;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", system-ui;
+   font-weight: 500;
+   font-style: normal;
+ }
