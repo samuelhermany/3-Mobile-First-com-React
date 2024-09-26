@@ -6,33 +6,57 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const CardContainer = styled.div`
   width: 100%;
-  max-width: 400px;
-  background-color: #f4f4f9;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  overflow: hidden;
-  border: 1px solid #777;
+  @media (max-width: 768px) {
+    max-width: 400px;
+    background-color: #f4f4f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    border: 1px solid #777;
+  }
+  @media (min-width: 768px) {
+    border: 1px solid #777;
+  }
 `;
 
 // #region HEADER
 const Header = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  background-color: #fff;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+  }
 `;
-
-
 const ProfileImage = styled.img`
-  width: 100%;
-  object-fit: cover;
+  @media (max-width: 768px) {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    width: 33.33%;
+    min-width: 330px;
+  }
 `;
 
 const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    width: 100%;
+    padding: 0 10px;
+  }
 `;
 
 const Nome = styled.h1`
@@ -62,20 +86,33 @@ const InfoSub = styled.p`
 
 // #region ICONS
 const Icons = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 10%;
+    padding: 0 10px;
+    gap: 15px;
+  }
 `;
 
 const Linha = styled.hr`
-  margin: 10px 0;
-  border: 1px solid #777;
-  width: 100%;
+  @media (max-width: 768px) {
+    margin: 10px 0;
+    border: 1px solid #777;
+    width: 100%;
+  }
 `;
 // #endregion ICONS
 
 
-// #region TABELA
+// TableContainer - Estilização da tabela de tarefas
 const TableContainer = styled.div`
   padding: 20px;
   background-color: #f9f9f9;
@@ -107,8 +144,7 @@ const Checkbox = styled.input.attrs({ type: 'checkbox' })`
   height: 20px;
   cursor: pointer;
 `;
-// #endregion TABELA
-
+// TaskCard Component
 export function TaskCard () {
   return (
     <CardContainer>
