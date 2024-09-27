@@ -8,12 +8,15 @@
   list-style: none;
 }
 
+
 .shopping_list {
   width: 100%;
+  max-width: 600px;
+  min-width: 400px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ddd;
-  /* background-color: #f9f9f9; */
+  background-color: #f9f9f9;
 }
 
 h1 {

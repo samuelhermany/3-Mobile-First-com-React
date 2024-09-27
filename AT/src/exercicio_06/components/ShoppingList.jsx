@@ -41,8 +41,8 @@ export function ShoppingList({items, isDarkTheme}) {
                                     type="number"
                                     min="1"
                                     value={quantidades[index]}
-                                    onChange={(e) => handleQuantidadehange(index, parseInt(e.target.value) || 1)}
-                                    className="quantity-input"
+                                    onChange={(e) =>
+                                        handleQuantidadehange(index, parseInt(e.target.value) || 1)}
                                 />
                             </td>
                             <td className={styles.valorTotal}>R${itemTotal.toFixed(2)}</td>

@@ -16,9 +16,9 @@ export default function App() {
         <a href="src/exercicio_09/index.html">TP 9</a>
         <a href="src/exercicio_10/index.html">TP 10</a>
         <a href="src/exercicio_11/index.html">TP 11</a>
-        {/*<a href="src/exercicio_12/index.html">TP 12</a>
+        <a href="src/exercicio_12/index.html">TP 12</a>
         <a href="src/exercicio_13/index.html">TP 13</a>
-        <a href="src/exercicio_14/index.html">TP 14</a>
+        {/*<a href="src/exercicio_14/index.html">TP 14</a>
         <a href="src/exercicio_15/index.html">TP 15</a>
         <a href="src/exercicio_16/index.html">TP 16</a> */}
       </div>
